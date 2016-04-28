@@ -58,10 +58,10 @@ SimSearcher::SimSearcher()
 
 SimSearcher::~SimSearcher()
 {
-	delete m_tree_ED;
-	delete m_tree_Jaccard;
-	delete[] m_string_list;
-	delete[] m_string_size;
+	//delete m_tree_ED;
+	//delete m_tree_Jaccard;
+	//delete[] m_string_list;
+	//delete[] m_string_size;
 	delete[] searchQueue;
 	delete[] searchList;
 }
@@ -78,7 +78,6 @@ int SimSearcher::createIndexED(const char *filename, unsigned q)
     const int buffer_size = 260;
     while(fp.getline(line, buffer_size))
     {
-    	m_string_grams.push_back(std::vector<std::string>());
     	//cout << line << endl;
         int length = strlen(line);
         m_string_list[m_idx] = new char[257];
