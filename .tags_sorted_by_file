@@ -1,0 +1,78 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+SimJoiner	SimJoiner.cpp	/^SimJoiner::SimJoiner() {$/;"	f	class:SimJoiner
+joinED	SimJoiner.cpp	/^int SimJoiner::joinED(const char *filename1, const char *filename2, unsigned threshold, vector<EDJoinResult> &result) {$/;"	f	class:SimJoiner
+joinJaccard	SimJoiner.cpp	/^int SimJoiner::joinJaccard(const char *filename1, const char *filename2, double threshold, vector<JaccardJoinResult> &result) {$/;"	f	class:SimJoiner
+~SimJoiner	SimJoiner.cpp	/^SimJoiner::~SimJoiner() {$/;"	f	class:SimJoiner
+EDJoinResult	SimJoiner.h	/^typedef JoinResult<unsigned, unsigned> EDJoinResult;$/;"	t
+JaccardJoinResult	SimJoiner.h	/^typedef JoinResult<unsigned, double> JaccardJoinResult;$/;"	t
+JoinResult	SimJoiner.h	/^struct JoinResult {$/;"	s
+SimJoiner	SimJoiner.h	/^class SimJoiner {$/;"	c
+__EXP2_SIMJOINER_H__	SimJoiner.h	2;"	d
+id1	SimJoiner.h	/^    IDType id1;$/;"	m	struct:JoinResult
+id2	SimJoiner.h	/^    IDType id2;$/;"	m	struct:JoinResult
+s	SimJoiner.h	/^    SimType s;$/;"	m	struct:JoinResult
+searcher	SimJoiner.h	/^    SimSearcher searcher;$/;"	m	class:SimJoiner
+DP	SimSearcher.cpp	/^int SimSearcher::DP(const char* query, int item, int length_query, int thres)$/;"	f	class:SimSearcher
+EPS	SimSearcher.cpp	9;"	d	file:
+MAX_LENGTH	SimSearcher.cpp	8;"	d	file:
+SimSearcher	SimSearcher.cpp	/^SimSearcher::SimSearcher()$/;"	f	class:SimSearcher
+createIndexED	SimSearcher.cpp	/^int SimSearcher::createIndexED(const char *filename, unsigned q)$/;"	f	class:SimSearcher
+createIndexJaccard	SimSearcher.cpp	/^int SimSearcher::createIndexJaccard(const char *filename, unsigned q)$/;"	f	class:SimSearcher
+max	SimSearcher.cpp	/^double max(double a, double b)$/;"	f
+max	SimSearcher.cpp	/^int max(int a, int b)$/;"	f
+min	SimSearcher.cpp	/^int min(int a, int b)$/;"	f
+operator <	SimSearcher.cpp	/^bool operator < (const sortItem& a, const sortItem& b)$/;"	f
+searchED	SimSearcher.cpp	/^int SimSearcher::searchED(const char *query, unsigned threshold, vector<pair<unsigned, unsigned> > &result)$/;"	f	class:SimSearcher
+searchJaccard	SimSearcher.cpp	/^int SimSearcher::searchJaccard(const char *query, double threshold, vector<pair<unsigned, double> > &result)$/;"	f	class:SimSearcher
+~SimSearcher	SimSearcher.cpp	/^SimSearcher::~SimSearcher()$/;"	f	class:SimSearcher
+FAILURE	SimSearcher.h	/^const int FAILURE = 1;$/;"	v
+MAX_ITEM	SimSearcher.h	10;"	d
+SUCCESS	SimSearcher.h	/^const int SUCCESS = 0;$/;"	v
+SimSearcher	SimSearcher.h	/^class SimSearcher$/;"	c
+d	SimSearcher.h	/^	int d[257][257];$/;"	m	class:SimSearcher
+data	SimSearcher.h	/^	std::vector<int> * data;$/;"	m	struct:sortItem
+lists	SimSearcher.h	/^	sortItem* lists;$/;"	m	class:SimSearcher
+m_gram_length	SimSearcher.h	/^	std::vector<int> m_gram_length[257];$/;"	m	class:SimSearcher
+m_idx	SimSearcher.h	/^	int m_idx;$/;"	m	class:SimSearcher
+m_min_gram	SimSearcher.h	/^	int m_min_gram;$/;"	m	class:SimSearcher
+m_q	SimSearcher.h	/^	int m_q;$/;"	m	class:SimSearcher
+m_string_grams	SimSearcher.h	/^	std::vector<std::vector<std::string> > m_string_grams;$/;"	m	class:SimSearcher
+m_string_list	SimSearcher.h	/^	char** m_string_list;$/;"	m	class:SimSearcher
+m_string_size	SimSearcher.h	/^	int* m_string_size, *searchQueue, *searchList;$/;"	m	class:SimSearcher
+m_tree_ED	SimSearcher.h	/^	Trie* m_tree_ED;$/;"	m	class:SimSearcher
+m_tree_Jaccard	SimSearcher.h	/^	Trie* m_tree_Jaccard;$/;"	m	class:SimSearcher
+searchList	SimSearcher.h	/^	int* m_string_size, *searchQueue, *searchList;$/;"	m	class:SimSearcher
+searchQueue	SimSearcher.h	/^	int* m_string_size, *searchQueue, *searchList;$/;"	m	class:SimSearcher
+size	SimSearcher.h	/^	int size;$/;"	m	struct:sortItem
+sortItem	SimSearcher.h	/^	sortItem(){}$/;"	f	struct:sortItem
+sortItem	SimSearcher.h	/^	sortItem(std::vector<int> * data)$/;"	f	struct:sortItem
+sortItem	SimSearcher.h	/^struct sortItem$/;"	s
+~sortItem	SimSearcher.h	/^	~sortItem(){}$/;"	f	struct:sortItem
+MAXITEM	Trie.cpp	5;"	d	file:
+Trie	Trie.cpp	/^Trie::Trie()$/;"	f	class:Trie
+TrieNode	Trie.cpp	/^TrieNode::TrieNode()$/;"	f	class:TrieNode
+insert	Trie.cpp	/^void Trie::insert(char* str, int idx, int length)$/;"	f	class:Trie
+insert	Trie.cpp	/^void Trie::insert(const  char* str, int idx)$/;"	f	class:Trie
+searchStr	Trie.cpp	/^std::vector<int> * Trie::searchStr(char* str, int length)$/;"	f	class:Trie
+searchStr	Trie.cpp	/^std::vector<int> * Trie::searchStr(const char* str)$/;"	f	class:Trie
+~Trie	Trie.cpp	/^Trie::~Trie()$/;"	f	class:Trie
+~TrieNode	Trie.cpp	/^TrieNode::~TrieNode()$/;"	f	class:TrieNode
+ASCIISIZE	Trie.h	8;"	d
+Trie	Trie.h	/^class Trie$/;"	c
+TrieNode	Trie.h	/^struct TrieNode$/;"	s
+__TRIE_H__	Trie.h	2;"	d
+m_child_nodes	Trie.h	/^	int m_child_nodes[128];$/;"	m	struct:TrieNode
+m_empty_list	Trie.h	/^	std::vector<int> m_empty_list;$/;"	m	class:Trie
+m_idx	Trie.h	/^	int m_idx;$/;"	m	class:Trie
+m_list	Trie.h	/^	std::vector<int> m_list; $/;"	m	struct:TrieNode
+m_pool	Trie.h	/^	TrieNode* m_pool;$/;"	m	class:Trie
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+main	main.cpp	/^int main(int argc, char **argv) {$/;"	f
+CXX	makefile	/^CXX=g++-4.8$/;"	m
+CXXFLAGS	makefile	/^CXXFLAGS=-std=c++11 -Wall -O3 -MMD -MP$/;"	m
+SRC	makefile	/^SRC=$(shell ls *.cpp)$/;"	m
+TARGET	makefile	/^TARGET=simjoiner$/;"	m
