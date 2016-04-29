@@ -1,7 +1,3 @@
-main.o: main.cpp SimJoiner.h SimSearcher.h Trie.h
+main.o: main.cpp SimJoiner.h
 
 SimJoiner.h:
-
-SimSearcher.h:
-
-Trie.h:
